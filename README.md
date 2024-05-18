@@ -24,7 +24,6 @@ The repository is organized into the following directories and files:
 - `DemoPracticalProjects/`: Contains example programs that demonstrate specific concepts.
 - `docs/`: Contains additional documentation and resources.
 - `src/`: Contains all the Java source files organized by topics or chapters.
-## - `tests/`: Contains test files and unit tests for the Java programs.
 
 Example structure:
 
@@ -81,9 +80,6 @@ Contributions are welcome! If you have any improvements or additional examples t
     ```
 5. Open a pull request.
 
-## License
-
-## This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
 
