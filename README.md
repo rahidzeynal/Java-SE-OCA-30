@@ -10,7 +10,6 @@ Welcome to the Java-SE-OCA-30 repository! This repository contains all the Java 
 - [Requirements](#requirements)
 - [Setup](#setup)
 - [Contributing](#contributing)
-## - [License](#license)
 - [Contact](#contact)
 
 ## Introduction
@@ -26,7 +25,7 @@ The repository is organized into the following directories and files:
 - `src/`: Contains all the Java source files organized by topics or chapters.
 
 Example structure:
-
+```bash
 Java-SE-OCA-30/
 ├── DemoPracticalProjects/
 │ ├── myGames/
@@ -34,7 +33,7 @@ Java-SE-OCA-30/
 │ └── ...
 ├── docs/
 └── src/
-
+```
 
 
 ## How to Use
