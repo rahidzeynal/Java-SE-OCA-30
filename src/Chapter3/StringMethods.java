@@ -42,5 +42,19 @@ public class StringMethods {
         System.out.println("abc".equals("abc")); //true
         System.out.println("abc".equals("AbC")); //false
 
+
+        System.out.println("String startsWith(), endsWith() and contains() examples");
+        System.out.println(s.startsWith("a")); //true
+        System.out.println(s.endsWith("mals")); //true
+        System.out.println(s.startsWith("A")); //false
+        System.out.println(s.contains("na")); //false
+        System.out.println(s.contains("m")); //true
+
+        System.out.println("String replace() and trim() examples");
+        System.out.println(s.replace('a', 'A'));
+        System.out.println(s.replace("mals", "----"));
+
+        System.out.println("\t animals \t");
+        System.out.println("\t animals \t".trim());
     }
 }
