@@ -24,6 +24,25 @@ public class StringBuilderMethods {
         System.out.println(x);
 
         // insert()
+        StringBuilder sb2 = new StringBuilder("animals");
+        sb2.insert(7,"-"); //animals-
+        sb2.insert(0,"-"); //-animals-
+        sb2.insert(4,"-"); //-ani-mals-
+        System.out.println(sb2);
 
+
+        // delete() and deleteCharAt()
+        StringBuilder sb3 = new StringBuilder("abcdef");
+        sb3.delete(1, 3); // adef because endIndex is not included
+        System.out.println(sb3);
+        // sb3.deleteCharAt(4); // this will raise error because already we don't have 4th character in our new sb2 variable value.
+
+
+
+        // reverse()
+        sb3.reverse(); //feda
+        System.out.println(sb3);
+
+        // StringBuffer is the big brother of StringBuilder. StringBuffer is slower than StringBuilder. StringBuffer is "more thread safe" than StringBuilder.
     }
 }
