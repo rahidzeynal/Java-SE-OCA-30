@@ -1,5 +1,7 @@
 package Chapter3;
 
+import javax.print.DocFlavor;
+
 public class StringBuilderExamples {
     public static void main(String[] args) {
         String s = "";
@@ -33,5 +35,11 @@ public class StringBuilderExamples {
         System.out.println(a);
         System.out.println(b);
         // a and b will be different in this case because here we created two different objects and a and b are looking to different memory addresses.
+
+
+        StringBuilder sb3 = new StringBuilder("animals");
+        String ss =  sb3.substring(0, 4);
+        StringBuilder sb4 = new StringBuilder(sb3.substring(0, 4));
+        System.out.println(sb3 + "->" + ss + "->" + sb4);
     }
 }

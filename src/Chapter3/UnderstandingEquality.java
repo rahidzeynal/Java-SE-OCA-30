@@ -2,34 +2,45 @@ package Chapter3;
 
 public class UnderstandingEquality {
     public static void main(String[] args) {
-        StringBuilder one = new StringBuilder();
-        StringBuilder two = new StringBuilder();
-        StringBuilder tree = one.append("a");
+        StringBuilder s1 = new StringBuilder("Test");
+        StringBuilder s2 = new StringBuilder("Test");
 
-        System.out.println(one == two); // false, because one and tree pointing to the separate heap memory address
-        System.out.println(one == tree); // true, because one and tree pointing to the same heap memory address
+        System.out.println(s1); // output: Test
+        System.out.println(s2); // Test
+        System.out.println(s1==s2); // false
+        System.out.println(s1.equals(s2)); //Line 1 output: false
+        System.out.println(s1.toString().equals(s2.toString())); //Line 2 output: false
 
-        StringBuilder four = new StringBuilder();
-        StringBuilder five = new StringBuilder();
-        four = five.append("a");
-        System.out.println(four == five);
 
-        // The lesson is to never use  == to compare String objects, always use the equals() or the equalsIgnoreCase() functions(methods).
+        System.out.println("-----------------------------");
+        StringBuilder s3 = new StringBuilder("Test");
+        StringBuilder s4 = s3;
 
-        System.out.println("---------------------");
-        Lion l1 = new Lion();
-        Lion l2 = new Lion();
-        Lion l3 =  l1;
-        System.out.println(l1==l1); //true
-        System.out.println(l1==l2); //false
-        System.out.println(l1==l3); //true
-        System.out.println(l1.equals(l1)); //true
-        System.out.println(l1.equals(l2)); //false
-        System.out.println(l1.equals(l3)); //true
+        System.out.println(s3); // output: Test
+        System.out.println(s4); // Test
+        System.out.println(s3==s4); // false
+        System.out.println(s3.equals(s4)); //Line 1 output: false
+        System.out.println(s3.toString().equals(s4.toString())); //Line 2 output: false
 
+
+
+        System.out.println("-----------------------------");
+        Tiger t1 = new Tiger();
+        Tiger t2 = new Tiger();
+        Tiger t3 = t1;
+
+        System.out.println(t3.equals(t1));
+
+
+
+
+        System.out.println("-----------------------------");
+        String s5 = new String("test");
+        String s6 = s5;
+        System.out.println(s5==s6);
+        System.out.println(s5.equals(s6));
     }
 }
-
-class Lion {
+class Tiger{
 
 }
