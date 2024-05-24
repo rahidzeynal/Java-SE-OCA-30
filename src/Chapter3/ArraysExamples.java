@@ -37,5 +37,18 @@ public class ArraysExamples {
             }
             System.out.println("-");
         }
+
+
+
+        // It takes ? years for an initial investment of $10,000 to become $20,000 with a yearly 10% increase.
+        double initial_value = 10000;
+        double target_value = initial_value * 2;
+        int countOfYear = 0;
+        double rate = 0.10;
+        do {
+            initial_value += initial_value * rate;
+            countOfYear++;
+        } while (initial_value <= target_value);
+        System.out.println(countOfYear);
     }
 }
