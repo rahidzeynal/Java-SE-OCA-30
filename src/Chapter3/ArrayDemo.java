@@ -15,16 +15,21 @@ public class ArrayDemo {
         int [] array3 = {1,2,3};
         System.out.println(array3[1]);
 
-        //declaring multiple arrays
-        int[] ids, types = {1}; //they both are arrays
 
+
+        //declaring multiple arrays
+        int[] ids = {1, 2}, types = {1}; //they both are arrays, because their data type is int[] not int
         int idss[] = {2}, typess; //This time idss is array but typess is not array.
+
+
+
 
 
         String [] bugs = {"cricket", "beetle", "ladybug"};
 
-        String [] alias = bugs;
+        String[] alias = bugs;
         System.out.println(bugs.equals(alias));
+        System.out.println(bugs==alias);
         System.out.println(bugs.toString());
     }
 }
