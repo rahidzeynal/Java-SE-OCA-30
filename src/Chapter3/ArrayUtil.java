@@ -2,9 +2,8 @@ package Chapter3;
 
 import java.util.Arrays;
 
-public class ArraysExamples {
+public class ArrayUtil {
     public static void main(String[] args) {
-
         // Sorting numeric array
         System.out.print("Unsorted version of our array: ");
         int[] arrayInt = {10, 4, 6, 7, 3, 9, 8, 2, 1, 5};
@@ -38,8 +37,7 @@ public class ArraysExamples {
             System.out.println("-");
         }
 
-
-
+            
         // It takes ? years for an initial investment of $10,000 to become $20,000 with a yearly 10% increase.
         double initial_value = 10000;
         double target_value = initial_value * 2;
