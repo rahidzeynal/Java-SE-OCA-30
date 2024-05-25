@@ -23,13 +23,23 @@ public class ArrayDemo {
 
 
 
-
-
         String [] bugs = {"cricket", "beetle", "ladybug"};
 
         String[] alias = bugs;
         System.out.println(bugs.equals(alias));
         System.out.println(bugs==alias);
         System.out.println(bugs.toString());
+
+
+        String[] strings = {"Z.Rahid"};
+        Object[] objects = strings;
+        String[] againStrings = (String[]) objects;
+        System.out.println(againStrings[0]);
+
+//        againStrings[0] = new StringBuildes();  //Doesn't compile
+//        objects[0] = new StringBuilder();       //Does compile, but raises run time exception.
+
+        System.out.println(array2.length);
+        System.out.println(array2[1]);
     }
 }
