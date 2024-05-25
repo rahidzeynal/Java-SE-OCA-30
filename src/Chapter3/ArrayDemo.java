@@ -7,7 +7,7 @@ public class ArrayDemo {
         array[0] = 1;
 //        array[1] = 2;
         array[2] = 3;
-        System.out.println(array[1]);
+        System.out.println(array[1]); //It will print 0 as default value for int in arrays.
 
         int [] array2 = new int[] {1,2,3};
         System.out.println(array2[2]);
