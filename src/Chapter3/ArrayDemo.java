@@ -1,5 +1,7 @@
 package Chapter3;
 
+import java.util.Arrays;
+
 public class ArrayDemo {
 
     public static void main(String[] args) {
@@ -48,5 +50,13 @@ public class ArrayDemo {
         String [] words = new String[] {"Some", "words."};
         String [] words2 = new String[] {"Some", "words."};
         System.out.println(words.equals(words2)); // Will return false because it looks for references are same or not
+
+        //Sorting
+        int[] sortNumbers = {6, 9, 1};
+        Arrays.sort(sortNumbers);
+        System.out.println(Arrays.toString(sortNumbers));
+        int sortNumbers2[] = {6, 9, 1, 5, 4};
+        Arrays.sort(sortNumbers2,1, sortNumbers2.length); // That will start sorting from mentioned index(1 in our case)
+        System.out.println(Arrays.toString(sortNumbers2));
     }
 }
