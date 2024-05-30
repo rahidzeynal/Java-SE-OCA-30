@@ -72,5 +72,16 @@ public class ArrayDemo {
         System.out.println(Arrays.binarySearch(numbers5, 4)); // 1
         System.out.println(Arrays.binarySearch(numbers5, 5)); // -2 - 1 = -3
         System.out.println(Arrays.binarySearch(numbers5, 8)); // -4 - 1 = -5
+
+
+        //varargs
+        varargsExample(1, 2, 3);
+    }
+
+    static void varargsExample(int... x) {
+        System.out.println(x[0]);
+        System.out.println(x[1]);
+        System.out.println(x[2]);
+//        System.out.println(x[3]);   // This will raise ArrayIndexOutOfBoundsException
     }
 }
