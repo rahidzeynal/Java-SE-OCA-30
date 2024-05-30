@@ -58,5 +58,9 @@ public class ArrayDemo {
         int sortNumbers2[] = {6, 9, 1, 5, 4};
         Arrays.sort(sortNumbers2,1, sortNumbers2.length); // That will start sorting from mentioned index(1 in our case)
         System.out.println(Arrays.toString(sortNumbers2));
+
+
+        //Searching
+        
     }
 }
