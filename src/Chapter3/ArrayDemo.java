@@ -61,6 +61,16 @@ public class ArrayDemo {
 
 
         //Searching
-        
+        int[] numbers4 = {2, 4, 6, 9};
+        System.out.println(Arrays.binarySearch(numbers4, 4)); // 1
+        System.out.println(Arrays.binarySearch(numbers4, 8)); // -3 - 1 = -4
+        System.out.println(Arrays.binarySearch(numbers4, 7)); // -3 - 1 = -4
+        System.out.println(Arrays.binarySearch(numbers4, 10)); // -4 - 1 = -5
+        System.out.println(Arrays.binarySearch(numbers4, 1)); // 0 - 1 = -1
+
+        int[] numbers5 = {2, 4, 6, 5};
+        System.out.println(Arrays.binarySearch(numbers5, 4)); // 1
+        System.out.println(Arrays.binarySearch(numbers5, 5)); // -2 - 1 = -3
+        System.out.println(Arrays.binarySearch(numbers5, 8)); // -4 - 1 = -5
     }
 }
