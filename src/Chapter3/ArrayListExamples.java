@@ -40,5 +40,13 @@ public class ArrayListExamples {
         birds.add(0, "blue jay");//b,h,r
         birds.add(1, "cardinal");//b,c,h,r
         System.out.println(birds);
+
+        //It's possible to assign add() methods return type(it's always true) to some boolean type variable:
+        boolean test = birds.add("Some bird");
+        System.out.println(test);
+        System.out.println(birds);
+
+//        test = birds.add(2, "test value"); // it's not possible because this add methods signature is not type of boolean!
+        
     }
 }
