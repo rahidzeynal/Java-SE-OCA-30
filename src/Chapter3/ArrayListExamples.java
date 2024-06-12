@@ -1,6 +1,7 @@
 package Chapter3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListExamples {
     public static void main(String[] args) {
@@ -32,5 +33,12 @@ public class ArrayListExamples {
 //        stringArrayList.add(8);                 //This doesn't work because we didn't specify ArrayList's type
 //        stringArrayList.add(Boolean.TRUE);      //This doesn't work because we didn't specify ArrayList's type
         System.out.println(stringArrayList);
+
+        List<String> birds = new ArrayList<>();
+        birds.add("hawk");
+        birds.add(1, "robin"); //h,r
+        birds.add(0, "blue jay");//b,h,r
+        birds.add(1, "cardinal");//b,c,h,r
+        System.out.println(birds);
     }
 }
