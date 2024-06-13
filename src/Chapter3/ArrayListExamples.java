@@ -47,6 +47,15 @@ public class ArrayListExamples {
         System.out.println(birds);
 
 //        test = birds.add(2, "test value"); // it's not possible because this add methods signature is not type of boolean!
-        
+
+        //romeve() method
+        List<String> birds2 = new ArrayList<>();
+        birds2.add("hawk");
+        birds2.add("robin");
+        System.out.println(birds2.remove("hawk")); //true
+        System.out.println(birds2.remove("cardinal")); //false
+        System.out.println(birds2.remove(0)); //robin, because hawk has already been deleted
+        System.out.println(birds2);
+        System.out.println(birds2.remove(0)); // will raise error because out List is already empty
     }
 }
