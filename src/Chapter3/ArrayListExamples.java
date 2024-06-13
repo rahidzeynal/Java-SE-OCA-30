@@ -56,6 +56,18 @@ public class ArrayListExamples {
         System.out.println(birds2.remove("cardinal")); //false
         System.out.println(birds2.remove(0)); //robin, because hawk has already been deleted
         System.out.println(birds2);
-        System.out.println(birds2.remove(0)); // will raise error because out List is already empty
+//        System.out.println(birds2.remove(0)); // will raise error because out List is already empty
+
+
+
+//        set()
+//        The set() method changes one of the elements of the ArrayList without changing the size.
+        List<String> birds3 = new ArrayList<>();
+        birds3.add("hawk");
+        System.out.println(birds3 + " -> " + birds3.size());  // 1
+        birds3.set(0, "robin");
+        System.out.println(birds3 + " -> " + birds3.size()); // 1
+        birds3.set(1, "cardinal"); // IndexOutOfBoundsException
+
     }
 }
